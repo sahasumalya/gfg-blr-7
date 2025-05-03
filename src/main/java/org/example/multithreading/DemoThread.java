@@ -1,18 +1,21 @@
 package org.example.multithreading;
 
+
+// creating thread by implementing runnable interface
 public class DemoThread implements Runnable {
 
+    public NumberPrinting numberPrinting;
+
+    public DemoThread(NumberPrinting numberPrinting) {
+        this.numberPrinting = numberPrinting;
+    }
 
     @Override
     public void run() {
-        printNumbers();
+        numberPrinting.printNumber();
 
 
     }
 
-    public static synchronized void printNumbers() {
-        for (int i = 0; i < 10; i++) {
-            System.out.println(Thread.currentThread().getName() + " " + i);
-        }
-    }
+
 }

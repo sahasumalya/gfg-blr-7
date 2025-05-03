@@ -21,7 +21,7 @@ public class DepositThread implements Runnable {
     public  void deposit(int amount) throws InterruptedException {
         synchronized (bank) {
             bank.deposit(amount);
-            bank.notify();
+//            bank.notify();
         }
 
     }
