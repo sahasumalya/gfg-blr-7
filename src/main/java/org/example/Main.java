@@ -4,10 +4,7 @@ import org.example.generics.Company;
 import org.example.generics.CustomGenerics;
 import org.example.multithreading.*;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -48,6 +45,43 @@ public class Main {
          * 3. Class level synchronisation
          * 4.Object level synchronisation
          **/
+
+         /* List<Integer> integers = new ArrayList<>();
+        integers.add(1);
+        integers.add(2);
+        integers.add(3);
+        ///    1  2  3
+        Iterator<Integer> iterator1 = integers.iterator();
+        while (iterator1.hasNext()) {
+            integers.add(4);
+            System.out.println(iterator1.next());
+        }*/
+
+        /*Queue<Integer> queue = new PriorityQueue<>();
+        queue.add(10);
+        queue.add(5);
+        queue.add(8);
+
+        while (queue.size() > 0) {
+            System.out.println(queue.poll());
+        }*/
+        /*Set<Integer> set = new LinkedHashSet<>();
+        for (int i = 0; i < 10; i++) {
+            set.add(i);
+        }
+        set.add(2);
+
+        Iterator<Integer> iterator = set.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }*/
+
+        TreeSet<Integer> set = new TreeSet<>();
+        set.add(5);
+        set.add(10);
+        set.add(8);
+        set.add(6);
+        set.add(3);
 
         //Thread thread1 = new Demo2Thread();
 
