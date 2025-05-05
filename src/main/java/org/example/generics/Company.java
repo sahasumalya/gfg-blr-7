@@ -1,6 +1,6 @@
 package org.example.generics;
 
-public class Company {
+public class Company  extends User{
     private String name;
     private String address;
 
